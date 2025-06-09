@@ -5,13 +5,15 @@
   font-family: sans-serif;
 }
 body{
-  background-image: url(./bgphoto.avif);
+  
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 70%;
 }
 
 .mainPage{
+  background-image: url(./bg2photo.avif);
   height: 100vh;
   width: 100%;
 }
@@ -111,7 +113,6 @@ body{
 
 
 @media (max-width:768px){
-
   .header{
     border: 2px solid #ddd1ad;
     border-top: 0;
@@ -133,6 +134,22 @@ body{
       width: 100%;
       background: green;
     }
+    #listitem li {
+       
+      position: sticky;
+      float: left;
+      margin-right: 1.4rem;
+    }
+
+    #listitem{
+      display: none;
+    }
+    #listitem.show{
+      display: block;
+    }
+
+    
+
 
     .navlogo #img{
       margin-left: 5vw;
@@ -143,6 +160,7 @@ body{
    .section1{
     flex-direction: column;
     gap: 6rem;
+    backdrop-filter: blur(50px);
     
    
    }

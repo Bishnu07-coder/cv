@@ -1,6 +1,7 @@
-const navlist = document.getElementById("#navlist");
-const menu = document.querySelector(".navmenu")
+const menu = document.querySelector("#navmenu");
+const list = document.querySelector("#listitem");
 
-function clicked(){
-  navlist.style.display  = "block";
-}
+menu.addEventListener("click",function()
+{
+list.classList.toggle("show");
+});
