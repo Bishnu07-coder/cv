@@ -5,15 +5,14 @@
   font-family: sans-serif;
 }
 body{
-  
+  background-image: url(./bg2photo.avif);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 70%;
+  backdrop-filter: blur(10px);
 }
 
 .mainPage{
-  background-image: url(./bg2photo.avif);
   height: 100vh;
   width: 100%;
 }
@@ -63,8 +62,11 @@ body{
   text-transform: uppercase;
 }
 .navlink ul li a:hover {
- text-decoration: underline;
- color: red;
+  color: rgb(202, 172, 156);
+  background-color: rgb(25, 25, 26);
+  border-radius: 3px;
+
+ 
 }
 
 .navmenu i{
@@ -87,7 +89,7 @@ body{
   font-weight: 600;
 }
 .section1 h1:hover{
- color: red;
+ color: rgb(142, 113, 94);
 }
 .section1 h1{
   animation: fadeIn 2s ease-in  forwards;
@@ -99,18 +101,58 @@ body{
   }
 }
  span{
-  color: #ddd1ad;
+  color: #622303;
   font-weight: 800;
 }
 
 
 .img img{
-  border: 2px solid #101010;
-  border-radius: 7%;
-  box-shadow:10px 10px 20px rgba(18, 18, 16, 0.5);
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 5%;
+  box-shadow:6px 1px  10px rgba(180, 120, 17, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: block;
+  
 }
 
+/* About Section */
 
+.about-section{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+ background-image: url(./bgphoto.avif);
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: cover;
+}
+
+.about-text{
+  height: 100vh;
+  width: 40vw;
+  display: flex;
+  align-items: center;
+}
+.about-text p{
+ font-size: 1.2rem;
+ font-weight: 500;
+ margin-right: 10vw;
+
+}
+.about-img{
+  height: 100vh;
+  width: 60vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about-img img{
+ height: auto;
+ max-height: 400px;
+ max-width: 200px;
+}
 
 @media (max-width:768px){
   .header{
@@ -128,12 +170,10 @@ body{
       display: block;
       font-size: 7vw;
       margin-right: 4vw;
+      
     }
+
     
-    #navlist{
-      width: 100%;
-      background: green;
-    }
     #listitem li {
        
       position: sticky;
@@ -165,20 +205,20 @@ body{
    
    }
    
-   .textcontent{
-    margin-top: 4rem;
-    
-   }
+
    .textcontent h1{
     min-width: 100vw;
-    font-size: 10vw;
+    font-size: 9vw;
     font-weight: 700;
+    margin-top: 5vw;
     
    
    }
    .img img{
     border-radius: 50%;
     max-width: 60vw;
+    box-shadow: none;
    }
+   
  
 }
